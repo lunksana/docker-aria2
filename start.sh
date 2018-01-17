@@ -7,5 +7,6 @@ echo "Please modify the configuration file!"
 elif [ ! -f $sessionpath ]; then
 touch /aria2/conf/aria2.session
 else
+chmod 666 /aria2/conf/aria2.session
 /usr/bin/aria2c --conf-path=/aria2/conf/aria2.conf
 fi

@@ -14,6 +14,5 @@ VOLUME [ "/aria2/conf" ] [ "/aria2/downloads" ]
 ADD start.sh /aria2/
 RUN chmod +x /aria2/start.sh
 EXPOSE 6800
-CMD [ "set -xe && \
-    /aria2/start.sh" ]
+CMD [ "set -xe && /aria2/start.sh" ]
 

@@ -1,7 +1,7 @@
 #!/bin/sh
 filepath='/aria2/conf/aria2.conf'
 if [! -f $filepath ]; then
-cp /aria2/aria2.conf /aria2/conf/aria2.conf
+cp /aria2/aria2.conf /aria2/conf/
 echo "Please modify the configuration file!"
 exit 0
 else

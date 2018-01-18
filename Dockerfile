@@ -4,7 +4,6 @@
 FROM alpine
 LABEL maintainer="lunksana <lunksana@gmail.com>"
 RUN apk update && \
-    apk upgrade && \
     apk add aria2 && \
     rm /var/cache/apk/* && \
     mkdir -p /aria2/conf && \
@@ -13,7 +12,9 @@ VOLUME [ "/aria2/conf","/aria2/downloads" ]
 
 ADD start.sh /aria2
 ADD aria2.conf /aria2
+ADD dht.dat /aria2
 RUN chmod +x /aria2/start.sh
 EXPOSE 6800
+ENV SECRET=password
 CMD set -xe &&\
     /aria2/start.sh

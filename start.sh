@@ -2,6 +2,7 @@
 filepath='/aria2/conf/aria2.conf'
 sessionpath='/aria2/conf/aria2.session'
 dhtpath='/aria2/conf/dht.dat'
+
 if [ ! -f $filepath ]; then
 cp /aria2/aria2.conf /aria2/conf
 echo "Please modify the configuration file!"

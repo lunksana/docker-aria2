@@ -12,7 +12,7 @@ cp /aria2/aria2.session /aria2/conf
 elif [ ! -f $dhtpath ]; then
 cp /aria2/dht.dat /aria2/conf
 else
-sed -i "s@bt-tracker.*@bt-tracker=$list@g" $filepath
+sed -i "s@bt-tracker*@bt-tracker=$list@g" $filepath
 /usr/bin/aria2c --conf-path=$filepath --dir=/aria2/downloads \
 --rpc-secret=${SECRET}
 fi

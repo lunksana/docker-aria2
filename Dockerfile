@@ -5,6 +5,7 @@ FROM alpine
 LABEL maintainer="lunksana <lunksana@gmail.com>"
 RUN apk update && \
     apk add aria2 && \
+    apk add wget && \
     rm /var/cache/apk/* && \
     mkdir -p /aria2/conf && \
     mkdir /aria2/downloads

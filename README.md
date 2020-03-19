@@ -6,7 +6,7 @@ Aria2版本：1.33.x
 
 ## 2.说明
 
-自制Aria2镜像，添加了DHT网络支持以及最新bt-tracker地址，并开启了rpc支持，默认密钥为password
+自制Aria2镜像，添加了DHT网络支持，并开启了rpc支持，默认密钥为password
 
 ## 3.使用方法
 
